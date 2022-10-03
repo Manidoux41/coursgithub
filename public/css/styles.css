@@ -1,0 +1,112 @@
+*, ::before, ::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+li {
+  list-style-type: none;
+}
+
+.wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+#activites {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+#activites .title {
+  padding: 25px;
+}
+#activites .cardContainer {
+  display: flex;
+  width: 100%;
+  height: 600px;
+  gap: 16px;
+}
+@media screen and (max-width: 768px) {
+  #activites .cardContainer {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+  }
+}
+#activites .cardContainer article {
+  width: 24%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+@media screen and (max-width: 768px) {
+  #activites .cardContainer article {
+    width: 100%;
+    height: 250px;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+#activites .cardContainer article .card {
+  border-radius: 16px;
+  overflow: hidden;
+  position: relative;
+}
+@media screen and (max-width: 768px) {
+  #activites .cardContainer article .card {
+    width: 100%;
+    height: 100%;
+  }
+}
+#activites .cardContainer article .card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#activites .cardContainer article .card h3 {
+  position: absolute;
+  background: #fff;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 15px;
+}
+#activites .cardContainer article .card--item-1, #activites .cardContainer article .card--item-4 {
+  width: 100%;
+  height: 100%;
+}
+@media screen and (max-width: 768px) {
+  #activites .cardContainer article .card--item-1, #activites .cardContainer article .card--item-4 {
+    width: 100%;
+    height: 100%;
+  }
+}
+#activites .cardContainer article .card--item-2, #activites .cardContainer article .card--item-6 {
+  width: 100%;
+  height: 35%;
+}
+@media screen and (max-width: 768px) {
+  #activites .cardContainer article .card--item-2, #activites .cardContainer article .card--item-6 {
+    width: 100%;
+    height: 100%;
+  }
+}
+#activites .cardContainer article .card--item-3, #activites .cardContainer article .card--item-5 {
+  width: 100%;
+  height: 65%;
+}
+@media screen and (max-width: 768px) {
+  #activites .cardContainer article .card--item-3, #activites .cardContainer article .card--item-5 {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
